@@ -1,0 +1,31 @@
+object DM: TDM
+  Height = 480
+  Width = 640
+  object FDMemProduto: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 184
+    Top = 112
+    object FDMemProdutoCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+    end
+    object FDMemProdutoNOME: TStringField
+      FieldName = 'NOME'
+      Size = 100
+    end
+    object FDMemProdutoCODIGO_BARRAS: TStringField
+      FieldName = 'CODIGO_BARRAS'
+      Size = 14
+    end
+  end
+  object DSProduto: TDataSource
+    DataSet = FDMemProduto
+    Left = 100
+    Top = 50
+  end
+end

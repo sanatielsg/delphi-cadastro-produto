@@ -15,6 +15,7 @@ type
     TabSheet2: TTabSheet;
     Panel1: TPanel;
     DBGProduto: TDBGrid;
+    DSProduto: TDataSource;
   private
     { Private declarations }
   public

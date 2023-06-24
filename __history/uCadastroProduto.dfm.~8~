@@ -19,7 +19,6 @@ object Form1: TForm1
     ActivePage = TabSheet2
     Align = alClient
     TabOrder = 0
-    ExplicitTop = -6
     object TabSheet1: TTabSheet
       Caption = 'Cadastro'
     end
@@ -30,17 +29,17 @@ object Form1: TForm1
         Left = 0
         Top = 0
         Width = 620
-        Height = 105
+        Height = 81
         Align = alTop
         TabOrder = 0
       end
       object DBGProduto: TDBGrid
         Left = 0
-        Top = 105
+        Top = 81
         Width = 620
-        Height = 288
+        Height = 312
         Align = alClient
-        DataSource = DM.DSProduto
+        DataSource = DSProduto
         TabOrder = 1
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -59,5 +58,10 @@ object Form1: TForm1
     ExplicitLeft = 112
     ExplicitTop = 416
     ExplicitWidth = 0
+  end
+  object DSProduto: TDataSource
+    DataSet = DM.FDMemProduto
+    Left = 532
+    Top = 42
   end
 end
