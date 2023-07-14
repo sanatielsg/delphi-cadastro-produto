@@ -1,2 +1,2 @@
 # delphi-cadastro-produto
-Tela simples de cadastro de produto feito em Delphi XE 11
+Um cadastro de produto feito em Delphi XE 11
